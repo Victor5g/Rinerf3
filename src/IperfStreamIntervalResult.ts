@@ -2,7 +2,7 @@ import type {
   InterfaceIperfIntervalResults,
   InterfaceIperfTime,
   interfaceIperfTimeDiff,
-} from './interfaces';
+} from './Interface';
 export class IperfStreamIntervalResult {
   public bytesTransferred: number = 0;
   public intervalDuration: number = 0;
