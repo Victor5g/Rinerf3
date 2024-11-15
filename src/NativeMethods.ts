@@ -17,6 +17,10 @@ const Rinerf3 = NativeModules.Rinerf3
       }
     );
 
+export function multiply(a: number, b: number): Promise<number> {
+  return Rinerf3.multiply(a, b);
+}
+
 export function setIperfRole(ipt: number, role: string) {
   Rinerf3.setIperfRole(ipt, role);
 }

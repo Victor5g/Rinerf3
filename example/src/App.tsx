@@ -7,12 +7,12 @@ export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(78, 7).then(setResult);
+    multiply(132, 78).then(setResult);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text style={styles.text} >Result: {result}</Text>
     </View>
   );
 }
@@ -22,10 +22,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor:'#000000'
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  text: {
+   color:'#FFFFFF',
+   fontSize:18
   },
 });
